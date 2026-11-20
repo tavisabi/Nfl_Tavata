@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-noche-950 text-slate-200 antialiased; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { @apply bg-noche-600 rounded; }
+}
+
+@layer components {
+  .tarjeta { @apply bg-noche-900 border border-noche-700 rounded-xl; }
+  .etiqueta { @apply text-[11px] uppercase tracking-wider text-slate-400; }
+  .boton { @apply px-3 py-1.5 rounded-md text-sm font-medium bg-noche-800 border border-noche-600 hover:bg-noche-700 transition-colors; }
+  .boton-activo { @apply bg-ventaja/15 border-ventaja/60 text-ventaja; }
+  .control { @apply bg-noche-850 border border-noche-600 rounded-md px-2 py-1.5 text-sm text-slate-200 focus:outline-none focus:border-ventaja/60; }
+  .tabla th { @apply text-left font-medium text-slate-400 text-xs uppercase tracking-wide px-3 py-2 border-b border-noche-700 whitespace-nowrap; }
+  .tabla td { @apply px-3 py-2 border-b border-noche-800 whitespace-nowrap; }
+  .tabla tbody tr { @apply hover:bg-noche-800/70 cursor-pointer; }
+}

@@ -1,0 +1,23 @@
+.venv/
+.hackathon/.tools/
+.hackathon/.cache/
+.hackathon/.bootstrap/
+.hackathon/setup.log
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+setup-log.txt
+entrega-*.zip
+
+# Datos del evento: no se redistribuyen (el repositorio de origen no tiene licencia). Ver data/LEEME.md
+data/*
+!data/LEEME.md
+
+# Llaves y credenciales: nunca al repositorio
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
